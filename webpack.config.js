@@ -11,7 +11,7 @@ module.exports = {
     'react/lib/ExecutionEnvironment': true,
     'react/lib/ReactContext': true,
   },
-  entry: './lib/gravatar.jsx',
+  entry: './lib/main.jsx',
   devServer: {
     hot: true,
     inline: true,

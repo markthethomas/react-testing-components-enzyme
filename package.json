@@ -4,7 +4,7 @@
   "description": "Sample repo for a blog post on testing react components with enzyme",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/helpers/browser.js test/**/*.spec.js",
+    "test": "mocha -w test/helpers/browser.js test/*.spec.js",
     "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./"
   },
   "ava": {
@@ -33,7 +33,9 @@
     "bell-on-bundler-error-plugin": "^1.0.8",
     "chai": "^3.5.0",
     "enzyme": "^2.0.0",
+    "jsdom": "^8.1.0",
     "react-addons-test-utils": "^0.14.7",
+    "sinon": "^1.17.3",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   },

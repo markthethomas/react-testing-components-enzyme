@@ -1,11 +1,8 @@
 import React, {propTypes} from 'react';
-import {render} from 'react-dom';
 import md5 from 'md5';
 
 import Avatar from './avatar';
-import EmailAvatar from './input';
-
-const appRoot = document.getElementById('root');
+import Email from './email';
 
 export default class Gravatar extends React.Component {
   constructor(props) {
@@ -31,13 +28,8 @@ export default class Gravatar extends React.Component {
       <div className="react-gravatar">
         <h4>Avatar for:</h4>
         <Avatar email={this.state.email} src={this.state.src}/>
-        <EmailAvatar fetchGravatar={this.updateGravatar.bind(this)} handleEmailChange={this.updateEmail.bind(this)}/>
+        <Email fetchGravatar={this.updateGravatar.bind(this)} handleEmailChange={this.updateEmail.bind(this)}/>
       </div>
     );
   }
 }
-
-render(
-  <Gravatar/>,
-  appRoot
-);
