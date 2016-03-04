@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
+
 
 export default class Avatar extends React.Component {
   render() {
@@ -12,3 +13,8 @@ export default class Avatar extends React.Component {
     );
   }
 }
+
+Avatar.propTypes = {
+  email: PropTypes.string,
+  src: PropTypes.string,
+};
