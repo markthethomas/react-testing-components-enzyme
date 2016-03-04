@@ -33,7 +33,7 @@ describe('<Gravatar />', () => {
     expect(wrapper.state().src).to.equal('http://placehold.it/200x200');
   });
 
-  it('should update the src state on fetch', function () {
+  it('should update the src state on clicking fetch', function () {
     const wrapper = mount(<Gravatar/>);
     wrapper.setState({ email: 'markthethomas@gmail.com' });
     wrapper.find('button').simulate('click');
