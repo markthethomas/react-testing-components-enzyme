@@ -34,6 +34,7 @@
     "chai": "^3.5.0",
     "enzyme": "^2.0.0",
     "jsdom": "^8.1.0",
+    "mocha": "^3.0.2",
     "react-addons-test-utils": "^0.14.7",
     "sinon": "^1.17.3",
     "webpack": "^1.12.14",
